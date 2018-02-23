@@ -1,0 +1,96 @@
+feap ** Barra de Taylor
+0,0,0,2,2,4
+
+PARAmeter
+m=10
+n=36
+
+noprint
+BLOCk 1
+CARTesian,m,n,1,1,1,0,0
+1,0.0,0.0
+2,3.2e-3,0.0
+3,3.2e-3,32.4e-3
+4,0.0,32.4e-3
+
+EBOUndary
+2,0.0,0,1
+1,0.0,1,0
+
+mate,1
+solid
+axis
+finite
+mixed
+elastic,isotropic,117.0e9,0.35
+plastic,mises,400.0e6,0.0d0,0.0d0
+plastic,hard,100.0e6
+density,body,8930.0
+
+
+end
+
+batc
+noprint
+init,rate
+!plot,postscript
+plot,symm,1
+plot,mesh
+plot,outl
+plot,boun
+plot,axis
+!plot,postscript
+end
+1,1,0.0,-227.0
+(m+1)*(n+1),,0.0,-227.0
+
+!inte
+
+batch
+dt,,1.0e-6
+!tol,,1.e-6
+tplo
+transient,alph
+form,acce
+loop,plot,8
+  loop,time,10
+    time
+    !time,,8.E-05
+    !auto,time,35,40,5
+    loop,tan,100
+      tang,line,1
+    next,tan
+  next,time
+  plot,wipe
+  !plot,postscript
+  plot,center,0.60,0.50
+  plot,symm,1
+  plot,unde
+  plot,outl
+  plot,defo,,-1
+  plot,range,0.1,1.1
+  plot,stre,7
+  !plot,postscript
+next,plot
+!plot,postscript
+plot,wipe
+plot,symm,1
+plot,outl
+plot,stre,7
+plot,reac
+plot,unde,-1
+plot,outl
+!plot,postscript
+end
+disp,397,2
+disp,199,2
+velo,397,2
+velo,199,2
+stre,1,2
+stre,1,7
+stre,191,2
+show
+
+inte               ! Enter into interactive mode
+
+stop

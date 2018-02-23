@@ -1,0 +1,14 @@
+Parameters
+m=10
+n=36
+ 
+MATErial       1
+  solid   0   0   0   0   0
+    axis
+    finite
+    mixed
+    elastic,isotropic,117.0e9,0.35
+    plastic,mises,400.0e6,0.0d0,0.0d0
+    plastic,hard,100.0e6
+    density,body,8930.0
+     

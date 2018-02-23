@@ -1,0 +1,1247 @@
+ feap ** Barra de Taylor                                                        
+
+     Solution date: Wed Feb 21 19:11:27 2018
+
+              8.1-gmc2 lxgfor64
+              10 may 2010      
+
+     Input Data Filename: Itayl                                                                                                                           
+
+     Number of Nodal Points  - - - - - - :      407
+     Number of Elements  - - - - - - - - :      360
+
+     Spatial Dimension of Mesh - - - - - :        2
+     Degrees-of-Freedom/Node (Maximum) - :        2
+     Equations/Element       (Maximum) - :        0
+     Number Element Nodes    (Maximum) - :        4
+
+     Number of Material Sets - - - - - - :        1
+     Number Parameters/Set   (Program) - :      250
+     Number Parameters/Set   (Users  ) - :      150
+
+  C o n s t a n t    V a l u e s
+
+     Constant m  =  0.10000000E+02
+     Constant n  =  0.36000000E+02
+
+     Material  Number   1 for Element Type: solid
+                         
+
+                                                                          
+
+     T w o   D i m e n s i o n a l   S o l i d   E l e m e n t
+
+     M e c h a n i c a l   P r o p e r t i e s
+
+     Logarithmic Stretch Stored Energy Function 
+
+          Modulus E        1.17000E+11
+          Poisson ratio    0.35000
+          Bulk Modulus     1.30000E+11
+          Shear Modulus    4.33333E+10
+
+          Thickness        1.00000E+00
+          Density          8.93000E+03
+
+          1-Gravity Load   0.00000E+00
+          2-Gravity Load   0.00000E+00
+          3-Gravity Load   0.00000E+00
+
+          Wave speed - c_o 4.58560E+03
+          Implicit time integration
+
+        von Mises Yield function
+          Yield stress      (initial) :   4.00000E+08
+          Yield stress     (infinity) :   4.00000E+08
+          Hardening exponent  (delta) :   1.00000E+00
+        Linear hardening parts
+          Isotropic hardening (H_iso) :   1.00000E+08
+          Kinematic hardening (H_kin) :   0.00000E+00
+
+
+     C o n s t i t u t i v e    S t a r t
+
+          State       : Elastic
+          Formulation : Finite deformation.
+          Element type: Mixed
+          Augmenting  : On
+          Mass type   : Consistent.
+
+ feap ** Barra de Taylor                                                       
+
+
+ feap ** Barra de Taylor                                                       
+
+  M a c r o   I n s t r u c t i o n s
+
+  Macro Statement            Variable 1  Variable 2  Variable 3
+       nopr                  0.0000E+00  0.0000E+00  0.0000E+00
+       init rate             0.0000E+00  0.0000E+00  0.0000E+00
+       plot symm             1.0000E+00  0.0000E+00  0.0000E+00
+       plot mesh             0.0000E+00  0.0000E+00  0.0000E+00
+       plot outl             0.0000E+00  0.0000E+00  0.0000E+00
+       plot boun             0.0000E+00  0.0000E+00  0.0000E+00
+       plot axis             0.0000E+00  0.0000E+00  0.0000E+00
+ *Macro   1 * nopr                v:   0.00       0.00       0.00    
+                                                           t=     0.01     0.00
+ *End of Macro Execution*                                  t=     0.01     0.00
+
+ feap ** Barra de Taylor                                                       
+
+  M a c r o   I n s t r u c t i o n s
+
+  Macro Statement            Variable 1  Variable 2  Variable 3
+       dt                    1.0000E-06  0.0000E+00  0.0000E+00
+       tplo                  0.0000E+00  0.0000E+00  0.0000E+00
+       tran alph             0.0000E+00  0.0000E+00  0.0000E+00
+       form acce             0.0000E+00  0.0000E+00  0.0000E+00
+       loop plot             8.0000E+00  0.0000E+00  0.0000E+00
+       loop time             1.0000E+01  0.0000E+00  0.0000E+00
+       time                  0.0000E+00  0.0000E+00  0.0000E+00
+       loop tan              1.0000E+02  0.0000E+00  0.0000E+00
+       tang line             1.0000E+00  0.0000E+00  0.0000E+00
+       next tan              0.0000E+00  0.0000E+00  0.0000E+00
+       next time             0.0000E+00  0.0000E+00  0.0000E+00
+       plot wipe             0.0000E+00  0.0000E+00  0.0000E+00
+       plot center           6.0000E-01  5.0000E-01  0.0000E+00
+       plot symm             1.0000E+00  0.0000E+00  0.0000E+00
+       plot unde             0.0000E+00  0.0000E+00  0.0000E+00
+       plot outl             0.0000E+00  0.0000E+00  0.0000E+00
+       plot defo             0.0000E+00 -1.0000E+00  0.0000E+00
+       plot range            1.0000E-01  1.1000E+00  0.0000E+00
+       plot stre             7.0000E+00  0.0000E+00  0.0000E+00
+       next plot             0.0000E+00  0.0000E+00  0.0000E+00
+       plot wipe             0.0000E+00  0.0000E+00  0.0000E+00
+       plot symm             1.0000E+00  0.0000E+00  0.0000E+00
+       plot outl             0.0000E+00  0.0000E+00  0.0000E+00
+       plot stre             7.0000E+00  0.0000E+00  0.0000E+00
+       plot reac             0.0000E+00  0.0000E+00  0.0000E+00
+       plot unde            -1.0000E+00  0.0000E+00  0.0000E+00
+       plot outl             0.0000E+00  0.0000E+00  0.0000E+00
+ Plot  1 Displ. : Node  =     397 DOF =  2 X =  0.000E+00  3.240E-02
+ Plot  2 Displ. : Node  =     199 DOF =  2 X =  0.000E+00  1.620E-02
+ Plot  1 Veloc. : Node  =     397 DOF =  2 X =  0.000E+00  3.240E-02
+ Plot  2 Veloc. : Node  =     199 DOF =  2 X =  0.000E+00  1.620E-02
+ Plot  1 Stress : Elmt  =       1 No. =  2
+ Plot  2 Stress : Elmt  =       1 No. =  7
+ Plot  3 Stress : Elmt  =     191 No. =  2
+
+ Conserving HHT Parameters
+  Beta =    0.5000 Gamma =    1.0000 Alpha =    0.5000
+
+   End Triangular Decomposition                            t=     0.02     0.00
+ *WARNING* Zero right-hand-side vector
+   Residual norm =     0.0000000E+00    1.0000000E+00
+
+   Computing solution at time  1.0000E-06: Total proportional load  1.0000E+00
+   Residual norm =     3.8956390E+04    1.0000000E+00      t=     0.03     0.00
+   End Triangular Decomposition                            t=     0.03     0.00
+   Residual norm =     6.4770979E+03    1.6626536E-01      t=     0.04     0.00
+   End Triangular Decomposition                            t=     0.04     0.00
+   Residual norm =     1.2938666E+03    3.3213206E-02      t=     0.05     0.00
+   End Triangular Decomposition                            t=     0.05     0.00
+   Residual norm =     2.7400907E+02    7.0337388E-03      t=     0.05     0.00
+   End Triangular Decomposition                            t=     0.05     0.00
+   Residual norm =     4.4205477E+00    1.1347426E-04      t=     0.06     0.00
+   End Triangular Decomposition                            t=     0.06     0.00
+   Residual norm =     4.8638152E-03    1.2485282E-07      t=     0.06     0.00
+   End Triangular Decomposition                            t=     0.06     0.00
+   Residual norm =     1.6975015E-06    4.3574405E-11      t=     0.07     0.00
+   End Triangular Decomposition                            t=     0.07     0.00
+
+   Computing solution at time  2.0000E-06: Total proportional load  1.0000E+00
+   Residual norm =     3.8750078E+04    1.0000000E+00      t=     0.08     0.00
+   End Triangular Decomposition                            t=     0.08     0.00
+   Residual norm =     6.0601172E+03    1.5638981E-01      t=     0.08     0.00
+   End Triangular Decomposition                            t=     0.08     0.00
+   Residual norm =     1.0545729E+03    2.7214730E-02      t=     0.09     0.00
+   End Triangular Decomposition                            t=     0.09     0.00
+   Residual norm =     9.0114918E+01    2.3255416E-03      t=     0.10     0.00
+   End Triangular Decomposition                            t=     0.10     0.00
+   Residual norm =     1.3314961E+00    3.4361122E-05      t=     0.10     0.00
+   End Triangular Decomposition                            t=     0.10     0.00
+   Residual norm =     8.4123522E-04    2.1709253E-08      t=     0.10     0.00
+   End Triangular Decomposition                            t=     0.11     0.00
+
+   Computing solution at time  3.0000E-06: Total proportional load  1.0000E+00
+   Residual norm =     3.8020957E+04    1.0000000E+00      t=     0.12     0.00
+   End Triangular Decomposition                            t=     0.12     0.00
+   Residual norm =     5.6267846E+03    1.4799166E-01      t=     0.12     0.00
+   End Triangular Decomposition                            t=     0.12     0.00
+   Residual norm =     7.6025352E+02    1.9995644E-02      t=     0.13     0.00
+   End Triangular Decomposition                            t=     0.13     0.00
+   Residual norm =     1.7058259E+01    4.4865412E-04      t=     0.13     0.00
+   End Triangular Decomposition                            t=     0.13     0.00
+   Residual norm =     7.3321067E-02    1.9284382E-06      t=     0.14     0.00
+   End Triangular Decomposition                            t=     0.14     0.00
+   Residual norm =     6.6243170E-06    1.7422805E-10      t=     0.14     0.00
+   End Triangular Decomposition                            t=     0.14     0.00
+
+   Computing solution at time  4.0000E-06: Total proportional load  1.0000E+00
+   Residual norm =     3.7471847E+04    1.0000000E+00      t=     0.15     0.00
+   End Triangular Decomposition                            t=     0.15     0.00
+   Residual norm =     6.0915039E+03    1.6256215E-01      t=     0.16     0.00
+   End Triangular Decomposition                            t=     0.16     0.00
+   Residual norm =     5.9093954E+02    1.5770227E-02      t=     0.16     0.00
+   End Triangular Decomposition                            t=     0.16     0.00
+   Residual norm =     2.4040224E+01    6.4155428E-04      t=     0.17     0.00
+   End Triangular Decomposition                            t=     0.17     0.00
+   Residual norm =     7.9097645E-01    2.1108552E-05      t=     0.17     0.00
+   End Triangular Decomposition                            t=     0.17     0.00
+   Residual norm =     1.5656609E-04    4.1782325E-09      t=     0.18     0.00
+   End Triangular Decomposition                            t=     0.18     0.00
+
+   Computing solution at time  5.0000E-06: Total proportional load  1.0000E+00
+   Residual norm =     3.7199702E+04    1.0000000E+00      t=     0.19     0.00
+   End Triangular Decomposition                            t=     0.19     0.00
+   Residual norm =     6.1752554E+03    1.6600282E-01      t=     0.19     0.00
+   End Triangular Decomposition                            t=     0.19     0.00
+   Residual norm =     4.7951355E+02    1.2890253E-02      t=     0.20     0.00
+   End Triangular Decomposition                            t=     0.20     0.00
+   Residual norm =     1.3726483E+01    3.6899443E-04      t=     0.20     0.00
+   End Triangular Decomposition                            t=     0.20     0.00
+   Residual norm =     5.5234150E-02    1.4848009E-06      t=     0.21     0.00
+   End Triangular Decomposition                            t=     0.21     0.00
+   Residual norm =     6.6010571E-06    1.7744920E-10      t=     0.22     0.00
+   End Triangular Decomposition                            t=     0.22     0.00
+
+   Computing solution at time  6.0000E-06: Total proportional load  1.0000E+00
+   Residual norm =     3.6806576E+04    1.0000000E+00      t=     0.22     0.00
+   End Triangular Decomposition                            t=     0.22     0.00
+   Residual norm =     6.1528773E+03    1.6716788E-01      t=     0.23     0.00
+   End Triangular Decomposition                            t=     0.23     0.00
+   Residual norm =     3.2268368E+02    8.7670117E-03      t=     0.24     0.00
+   End Triangular Decomposition                            t=     0.24     0.00
+   Residual norm =     4.3489327E+00    1.1815641E-04      t=     0.24     0.00
+   End Triangular Decomposition                            t=     0.24     0.00
+   Residual norm =     2.8702939E-03    7.7983182E-08      t=     0.25     0.00
+   End Triangular Decomposition                            t=     0.25     0.00
+   Residual norm =     4.9034537E-07    1.3322222E-11      t=     0.25     0.00
+   End Triangular Decomposition                            t=     0.25     0.00
+
+   Computing solution at time  7.0000E-06: Total proportional load  1.0000E+00
+   Residual norm =     3.6451852E+04    1.0000000E+00      t=     0.26     0.00
+   End Triangular Decomposition                            t=     0.26     0.00
+   Residual norm =     6.0946847E+03    1.6719822E-01      t=     0.27     0.00
+   End Triangular Decomposition                            t=     0.27     0.00
+   Residual norm =     2.4155097E+02    6.6265761E-03      t=     0.27     0.00
+   End Triangular Decomposition                            t=     0.27     0.00
+   Residual norm =     1.9140604E+00    5.2509277E-05      t=     0.28     0.00
+   End Triangular Decomposition                            t=     0.28     0.00
+   Residual norm =     1.0051089E-03    2.7573605E-08      t=     0.28     0.00
+   End Triangular Decomposition                            t=     0.28     0.00
+
+   Computing solution at time  8.0000E-06: Total proportional load  1.0000E+00
+   Residual norm =     3.6037226E+04    1.0000000E+00      t=     0.29     0.00
+   End Triangular Decomposition                            t=     0.29     0.00
+   Residual norm =     6.0990597E+03    1.6924332E-01      t=     0.30     0.00
+   End Triangular Decomposition                            t=     0.30     0.00
+   Residual norm =     1.9519424E+02    5.4164612E-03      t=     0.30     0.00
+   End Triangular Decomposition                            t=     0.30     0.00
+   Residual norm =     1.4179404E+00    3.9346548E-05      t=     0.31     0.00
+   End Triangular Decomposition                            t=     0.31     0.00
+   Residual norm =     4.4275105E-02    1.2285936E-06      t=     0.32     0.00
+   End Triangular Decomposition                            t=     0.32     0.00
+   Residual norm =     3.6415940E-06    1.0105090E-10      t=     0.32     0.00
+   End Triangular Decomposition                            t=     0.32     0.00
+
+   Computing solution at time  9.0000E-06: Total proportional load  1.0000E+00
+   Residual norm =     3.5692380E+04    1.0000000E+00      t=     0.33     0.00
+   End Triangular Decomposition                            t=     0.33     0.00
+   Residual norm =     6.0870698E+03    1.7054256E-01      t=     0.34     0.00
+   End Triangular Decomposition                            t=     0.34     0.00
+   Residual norm =     1.6860028E+02    4.7237053E-03      t=     0.34     0.00
+   End Triangular Decomposition                            t=     0.34     0.00
+   Residual norm =     6.3886815E+00    1.7899287E-04      t=     0.34     0.00
+   End Triangular Decomposition                            t=     0.34     0.00
+   Residual norm =     1.5564863E-03    4.3608366E-08      t=     0.35     0.00
+   End Triangular Decomposition                            t=     0.35     0.00
+   Residual norm =     3.0831416E-07    8.6380949E-12      t=     0.36     0.00
+   End Triangular Decomposition                            t=     0.36     0.00
+
+   Computing solution at time  1.0000E-05: Total proportional load  1.0000E+00
+   Residual norm =     3.5279116E+04    1.0000000E+00      t=     0.36     0.00
+   End Triangular Decomposition                            t=     0.36     0.00
+   Residual norm =     6.0607175E+03    1.7179335E-01      t=     0.37     0.00
+   End Triangular Decomposition                            t=     0.37     0.00
+   Residual norm =     1.4589076E+02    4.1353291E-03      t=     0.38     0.00
+   End Triangular Decomposition                            t=     0.38     0.00
+   Residual norm =     3.0752715E+00    8.7169744E-05      t=     0.38     0.00
+   End Triangular Decomposition                            t=     0.38     0.00
+   Residual norm =     6.8226649E-04    1.9339104E-08      t=     0.39     0.00
+   End Triangular Decomposition                            t=     0.39     0.00
+
+   Computing solution at time  1.1000E-05: Total proportional load  1.0000E+00
+   Residual norm =     3.4900800E+04    1.0000000E+00      t=     0.41     0.00
+   End Triangular Decomposition                            t=     0.41     0.00
+   Residual norm =     6.0195997E+03    1.7247742E-01      t=     0.42     0.00
+   End Triangular Decomposition                            t=     0.42     0.00
+   Residual norm =     1.3257632E+02    3.7986613E-03      t=     0.42     0.00
+   End Triangular Decomposition                            t=     0.42     0.00
+   Residual norm =     3.7510759E+00    1.0747822E-04      t=     0.43     0.00
+   End Triangular Decomposition                            t=     0.43     0.00
+   Residual norm =     5.1037656E-04    1.4623635E-08      t=     0.43     0.00
+   End Triangular Decomposition                            t=     0.43     0.00
+
+   Computing solution at time  1.2000E-05: Total proportional load  1.0000E+00
+   Residual norm =     3.4474737E+04    1.0000000E+00      t=     0.44     0.00
+   End Triangular Decomposition                            t=     0.44     0.00
+   Residual norm =     5.9785518E+03    1.7341834E-01      t=     0.45     0.00
+   End Triangular Decomposition                            t=     0.45     0.00
+   Residual norm =     1.2575417E+02    3.6477196E-03      t=     0.45     0.00
+   End Triangular Decomposition                            t=     0.45     0.00
+   Residual norm =     2.2748308E+00    6.5985443E-05      t=     0.46     0.00
+   End Triangular Decomposition                            t=     0.46     0.00
+   Residual norm =     1.8077182E-02    5.2436026E-07      t=     0.46     0.00
+   End Triangular Decomposition                            t=     0.46     0.00
+   Residual norm =     1.2043902E-06    3.4935442E-11      t=     0.47     0.00
+   End Triangular Decomposition                            t=     0.47     0.00
+
+   Computing solution at time  1.3000E-05: Total proportional load  1.0000E+00
+   Residual norm =     3.4083968E+04    1.0000000E+00      t=     0.48     0.00
+   End Triangular Decomposition                            t=     0.48     0.00
+   Residual norm =     5.9333792E+03    1.7408123E-01      t=     0.48     0.00
+   End Triangular Decomposition                            t=     0.49     0.00
+   Residual norm =     1.2202250E+02    3.5800555E-03      t=     0.49     0.00
+   End Triangular Decomposition                            t=     0.49     0.00
+   Residual norm =     2.2664183E+00    6.6495140E-05      t=     0.50     0.00
+   End Triangular Decomposition                            t=     0.50     0.00
+   Residual norm =     8.0891307E-02    2.3732949E-06      t=     0.50     0.00
+   End Triangular Decomposition                            t=     0.50     0.00
+   Residual norm =     5.6374513E-06    1.6539891E-10      t=     0.51     0.00
+   End Triangular Decomposition                            t=     0.51     0.00
+
+   Computing solution at time  1.4000E-05: Total proportional load  1.0000E+00
+   Residual norm =     3.3650531E+04    1.0000000E+00      t=     0.52     0.00
+   End Triangular Decomposition                            t=     0.52     0.00
+   Residual norm =     5.8804272E+03    1.7474991E-01      t=     0.52     0.00
+   End Triangular Decomposition                            t=     0.52     0.00
+   Residual norm =     1.2967997E+02    3.8537272E-03      t=     0.53     0.00
+   End Triangular Decomposition                            t=     0.53     0.00
+   Residual norm =     3.2371020E+00    9.6197650E-05      t=     0.54     0.00
+   End Triangular Decomposition                            t=     0.54     0.00
+   Residual norm =     6.2678684E-02    1.8626358E-06      t=     0.54     0.00
+   End Triangular Decomposition                            t=     0.54     0.00
+   Residual norm =     4.7152591E-06    1.4012436E-10      t=     0.55     0.00
+   End Triangular Decomposition                            t=     0.55     0.00
+
+   Computing solution at time  1.5000E-05: Total proportional load  1.0000E+00
+   Residual norm =     3.3241234E+04    1.0000000E+00      t=     0.56     0.00
+   End Triangular Decomposition                            t=     0.56     0.00
+   Residual norm =     5.8221785E+03    1.7514929E-01      t=     0.56     0.00
+   End Triangular Decomposition                            t=     0.56     0.00
+   Residual norm =     1.4185703E+02    4.2675021E-03      t=     0.57     0.00
+   End Triangular Decomposition                            t=     0.57     0.00
+   Residual norm =     2.8717514E+00    8.6391239E-05      t=     0.58     0.00
+   End Triangular Decomposition                            t=     0.58     0.00
+   Residual norm =     3.7078546E-02    1.1154383E-06      t=     0.58     0.00
+   End Triangular Decomposition                            t=     0.58     0.00
+   Residual norm =     2.2746243E-06    6.8427795E-11      t=     0.58     0.00
+   End Triangular Decomposition                            t=     0.59     0.00
+
+   Computing solution at time  1.6000E-05: Total proportional load  1.0000E+00
+   Residual norm =     3.2792683E+04    1.0000000E+00      t=     0.60     0.00
+   End Triangular Decomposition                            t=     0.60     0.00
+   Residual norm =     5.7531552E+03    1.7544021E-01      t=     0.60     0.00
+   End Triangular Decomposition                            t=     0.60     0.00
+   Residual norm =     1.7455246E+02    5.3229087E-03      t=     0.61     0.00
+   End Triangular Decomposition                            t=     0.61     0.00
+   Residual norm =     3.2649087E+00    9.9562109E-05      t=     0.61     0.00
+   End Triangular Decomposition                            t=     0.61     0.00
+   Residual norm =     1.1727806E-01    3.5763485E-06      t=     0.62     0.00
+   End Triangular Decomposition                            t=     0.62     0.00
+   Residual norm =     1.3260042E-05    4.0435978E-10      t=     0.62     0.00
+   End Triangular Decomposition                            t=     0.62     0.00
+
+   Computing solution at time  1.7000E-05: Total proportional load  1.0000E+00
+   Residual norm =     3.2362892E+04    1.0000000E+00      t=     0.63     0.00
+   End Triangular Decomposition                            t=     0.63     0.00
+   Residual norm =     5.6791064E+03    1.7548204E-01      t=     0.64     0.00
+   End Triangular Decomposition                            t=     0.64     0.00
+   Residual norm =     1.8690437E+02    5.7752679E-03      t=     0.64     0.00
+   End Triangular Decomposition                            t=     0.64     0.00
+   Residual norm =     1.8994743E+00    5.8692971E-05      t=     0.65     0.00
+   End Triangular Decomposition                            t=     0.65     0.00
+   Residual norm =     5.9791107E-04    1.8475205E-08      t=     0.66     0.00
+   End Triangular Decomposition                            t=     0.66     0.00
+
+   Computing solution at time  1.8000E-05: Total proportional load  1.0000E+00
+   Residual norm =     3.1897749E+04    1.0000000E+00      t=     0.67     0.00
+   End Triangular Decomposition                            t=     0.67     0.00
+   Residual norm =     5.5921941E+03    1.7531626E-01      t=     0.67     0.00
+   End Triangular Decomposition                            t=     0.67     0.00
+   Residual norm =     2.2765458E+02    7.1370110E-03      t=     0.68     0.00
+   End Triangular Decomposition                            t=     0.68     0.00
+   Residual norm =     4.2496882E+00    1.3322847E-04      t=     0.68     0.00
+   End Triangular Decomposition                            t=     0.68     0.00
+   Residual norm =     8.0496277E-02    2.5235724E-06      t=     0.69     0.00
+   End Triangular Decomposition                            t=     0.69     0.00
+   Residual norm =     4.2057927E-06    1.3185234E-10      t=     0.70     0.00
+   End Triangular Decomposition                            t=     0.70     0.00
+
+   Computing solution at time  1.9000E-05: Total proportional load  1.0000E+00
+   Residual norm =     3.1449053E+04    1.0000000E+00      t=     0.70     0.00
+   End Triangular Decomposition                            t=     0.70     0.00
+   Residual norm =     5.5001267E+03    1.7489006E-01      t=     0.71     0.00
+   End Triangular Decomposition                            t=     0.71     0.00
+   Residual norm =     2.6960851E+02    8.5728655E-03      t=     0.72     0.00
+   End Triangular Decomposition                            t=     0.72     0.00
+   Residual norm =     5.1503919E+00    1.6376938E-04      t=     0.72     0.00
+   End Triangular Decomposition                            t=     0.72     0.00
+   Residual norm =     5.3660725E-03    1.7062747E-07      t=     0.73     0.00
+   End Triangular Decomposition                            t=     0.73     0.00
+   Residual norm =     5.8072468E-07    1.8465569E-11      t=     0.73     0.00
+   End Triangular Decomposition                            t=     0.73     0.00
+
+   Computing solution at time  2.0000E-05: Total proportional load  1.0000E+00
+   Residual norm =     3.0970592E+04    1.0000000E+00      t=     0.74     0.00
+   End Triangular Decomposition                            t=     0.74     0.00
+   Residual norm =     5.3968463E+03    1.7425712E-01      t=     0.75     0.00
+   End Triangular Decomposition                            t=     0.75     0.00
+   Residual norm =     3.1438792E+02    1.0151176E-02      t=     0.76     0.00
+   End Triangular Decomposition                            t=     0.76     0.00
+   Residual norm =     4.9427517E+00    1.5959500E-04      t=     0.76     0.00
+   End Triangular Decomposition                            t=     0.76     0.00
+   Residual norm =     5.1539898E-01    1.6641561E-05      t=     0.77     0.00
+   End Triangular Decomposition                            t=     0.77     0.00
+   Residual norm =     1.1045341E-04    3.5663966E-09      t=     0.77     0.00
+   End Triangular Decomposition                            t=     0.77     0.00
+
+   Computing solution at time  2.1000E-05: Total proportional load  1.0000E+00
+   Residual norm =     3.0508649E+04    1.0000000E+00      t=     0.79     0.00
+   End Triangular Decomposition                            t=     0.79     0.00
+   Residual norm =     5.2924895E+03    1.7347505E-01      t=     0.80     0.00
+   End Triangular Decomposition                            t=     0.80     0.00
+   Residual norm =     3.4219045E+02    1.1216178E-02      t=     0.80     0.00
+   End Triangular Decomposition                            t=     0.80     0.00
+   Residual norm =     5.4640548E+00    1.7909855E-04      t=     0.81     0.00
+   End Triangular Decomposition                            t=     0.81     0.00
+   Residual norm =     3.1935472E-02    1.0467678E-06      t=     0.82     0.00
+   End Triangular Decomposition                            t=     0.82     0.00
+   Residual norm =     2.7211346E-06    8.9192235E-11      t=     0.82     0.00
+   End Triangular Decomposition                            t=     0.82     0.00
+
+   Computing solution at time  2.2000E-05: Total proportional load  1.0000E+00
+   Residual norm =     3.0021795E+04    1.0000000E+00      t=     0.83     0.00
+   End Triangular Decomposition                            t=     0.83     0.00
+   Residual norm =     5.1813138E+03    1.7258508E-01      t=     0.84     0.00
+   End Triangular Decomposition                            t=     0.84     0.00
+   Residual norm =     3.4667129E+02    1.1547321E-02      t=     0.84     0.00
+   End Triangular Decomposition                            t=     0.84     0.00
+   Residual norm =     6.4436638E+00    2.1463286E-04      t=     0.85     0.00
+   End Triangular Decomposition                            t=     0.85     0.00
+   Residual norm =     1.6706860E-02    5.5649103E-07      t=     0.86     0.00
+   End Triangular Decomposition                            t=     0.86     0.00
+   Residual norm =     1.7870002E-06    5.9523430E-11      t=     0.86     0.00
+   End Triangular Decomposition                            t=     0.86     0.00
+
+   Computing solution at time  2.3000E-05: Total proportional load  1.0000E+00
+   Residual norm =     2.9550673E+04    1.0000000E+00      t=     0.87     0.00
+   End Triangular Decomposition                            t=     0.87     0.00
+   Residual norm =     5.0719945E+03    1.7163719E-01      t=     0.88     0.00
+   End Triangular Decomposition                            t=     0.88     0.00
+   Residual norm =     3.2002024E+02    1.0829541E-02      t=     0.88     0.00
+   End Triangular Decomposition                            t=     0.88     0.00
+   Residual norm =     5.0756376E+00    1.7176047E-04      t=     0.89     0.00
+   End Triangular Decomposition                            t=     0.89     0.00
+   Residual norm =     9.9398667E-03    3.3636684E-07      t=     0.89     0.00
+   End Triangular Decomposition                            t=     0.89     0.00
+   Residual norm =     1.2187081E-06    4.1241296E-11      t=     0.90     0.00
+   End Triangular Decomposition                            t=     0.90     0.00
+
+   Computing solution at time  2.4000E-05: Total proportional load  1.0000E+00
+   Residual norm =     2.9057127E+04    1.0000000E+00      t=     0.91     0.00
+   End Triangular Decomposition                            t=     0.91     0.00
+   Residual norm =     4.9575508E+03    1.7061394E-01      t=     0.91     0.00
+   End Triangular Decomposition                            t=     0.92     0.00
+   Residual norm =     3.3582387E+02    1.1557367E-02      t=     0.92     0.00
+   End Triangular Decomposition                            t=     0.92     0.00
+   Residual norm =     4.9757921E+00    1.7124171E-04      t=     0.92     0.00
+   End Triangular Decomposition                            t=     0.92     0.00
+   Residual norm =     7.4358866E-03    2.5590578E-07      t=     0.93     0.00
+   End Triangular Decomposition                            t=     0.93     0.00
+   Residual norm =     6.7308551E-07    2.3164214E-11      t=     0.94     0.00
+   End Triangular Decomposition                            t=     0.94     0.00
+
+   Computing solution at time  2.5000E-05: Total proportional load  1.0000E+00
+   Residual norm =     2.8577228E+04    1.0000000E+00      t=     0.95     0.00
+   End Triangular Decomposition                            t=     0.95     0.00
+   Residual norm =     4.8467870E+03    1.6960312E-01      t=     0.95     0.00
+   End Triangular Decomposition                            t=     0.95     0.00
+   Residual norm =     2.6236212E+02    9.1808109E-03      t=     0.96     0.00
+   End Triangular Decomposition                            t=     0.96     0.00
+   Residual norm =     2.7992876E+00    9.7955183E-05      t=     0.96     0.00
+   End Triangular Decomposition                            t=     0.96     0.00
+   Residual norm =     2.5135179E-03    8.7955276E-08      t=     0.97     0.00
+   End Triangular Decomposition                            t=     0.97     0.00
+   Residual norm =     6.9361349E-07    2.4271546E-11      t=     0.98     0.00
+   End Triangular Decomposition                            t=     0.98     0.00
+
+   Computing solution at time  2.6000E-05: Total proportional load  1.0000E+00
+   Residual norm =     2.8076534E+04    1.0000000E+00      t=     0.98     0.00
+   End Triangular Decomposition                            t=     0.98     0.00
+   Residual norm =     4.7330680E+03    1.6857736E-01      t=     0.99     0.00
+   End Triangular Decomposition                            t=     0.99     0.00
+   Residual norm =     2.2789872E+02    8.1170533E-03      t=     1.00     0.00
+   End Triangular Decomposition                            t=     1.00     0.00
+   Residual norm =     4.9844519E+00    1.7753088E-04      t=     1.00     0.00
+   End Triangular Decomposition                            t=     1.00     0.00
+   Residual norm =     4.5045966E-03    1.6043991E-07      t=     1.01     0.00
+   End Triangular Decomposition                            t=     1.01     0.00
+   Residual norm =     6.7742586E-07    2.4127831E-11      t=     1.02     0.00
+   End Triangular Decomposition                            t=     1.02     0.00
+
+   Computing solution at time  2.7000E-05: Total proportional load  1.0000E+00
+   Residual norm =     2.7587858E+04    1.0000000E+00      t=     1.02     0.00
+   End Triangular Decomposition                            t=     1.02     0.00
+   Residual norm =     4.6272143E+03    1.6772648E-01      t=     1.03     0.00
+   End Triangular Decomposition                            t=     1.03     0.00
+   Residual norm =     1.9064531E+02    6.9104788E-03      t=     1.04     0.00
+   End Triangular Decomposition                            t=     1.04     0.00
+   Residual norm =     3.1805529E+00    1.1528814E-04      t=     1.04     0.00
+   End Triangular Decomposition                            t=     1.04     0.00
+   Residual norm =     8.3298782E-04    3.0194001E-08      t=     1.05     0.00
+   End Triangular Decomposition                            t=     1.05     0.00
+
+   Computing solution at time  2.8000E-05: Total proportional load  1.0000E+00
+   Residual norm =     2.7081204E+04    1.0000000E+00      t=     1.06     0.00
+   End Triangular Decomposition                            t=     1.06     0.00
+   Residual norm =     4.5206327E+03    1.6692879E-01      t=     1.06     0.00
+   End Triangular Decomposition                            t=     1.06     0.00
+   Residual norm =     1.5040972E+02    5.5540265E-03      t=     1.07     0.00
+   End Triangular Decomposition                            t=     1.07     0.00
+   Residual norm =     1.8279396E+00    6.7498461E-05      t=     1.08     0.00
+   End Triangular Decomposition                            t=     1.08     0.00
+   Residual norm =     5.2906800E-04    1.9536355E-08      t=     1.08     0.00
+   End Triangular Decomposition                            t=     1.08     0.00
+
+   Computing solution at time  2.9000E-05: Total proportional load  1.0000E+00
+   Residual norm =     2.6586994E+04    1.0000000E+00      t=     1.09     0.00
+   End Triangular Decomposition                            t=     1.09     0.00
+   Residual norm =     4.4226919E+03    1.6634795E-01      t=     1.10     0.00
+   End Triangular Decomposition                            t=     1.10     0.00
+   Residual norm =     1.5122445E+02    5.6879109E-03      t=     1.10     0.00
+   End Triangular Decomposition                            t=     1.10     0.00
+   Residual norm =     2.4389926E+00    9.1736305E-05      t=     1.11     0.00
+   End Triangular Decomposition                            t=     1.11     0.00
+   Residual norm =     1.1057648E-03    4.1590440E-08      t=     1.12     0.00
+   End Triangular Decomposition                            t=     1.12     0.00
+   Residual norm =     7.2038034E-07    2.7095216E-11      t=     1.12     0.00
+   End Triangular Decomposition                            t=     1.12     0.00
+
+   Computing solution at time  3.0000E-05: Total proportional load  1.0000E+00
+   Residual norm =     2.6077685E+04    1.0000000E+00      t=     1.13     0.00
+   End Triangular Decomposition                            t=     1.13     0.00
+   Residual norm =     4.3227428E+03    1.6576405E-01      t=     1.14     0.00
+   End Triangular Decomposition                            t=     1.14     0.00
+   Residual norm =     1.5054237E+02    5.7728424E-03      t=     1.14     0.00
+   End Triangular Decomposition                            t=     1.14     0.00
+   Residual norm =     1.4184021E+00    5.4391410E-05      t=     1.15     0.00
+   End Triangular Decomposition                            t=     1.15     0.00
+   Residual norm =     6.5684041E-04    2.5187834E-08      t=     1.16     0.00
+   End Triangular Decomposition                            t=     1.16     0.00
+   Residual norm =     6.6396686E-07    2.5461112E-11      t=     1.16     0.00
+   End Triangular Decomposition                            t=     1.16     0.00
+
+   Computing solution at time  3.1000E-05: Total proportional load  1.0000E+00
+   Residual norm =     2.5579762E+04    1.0000000E+00      t=     1.18     0.00
+   End Triangular Decomposition                            t=     1.18     0.00
+   Residual norm =     4.2286908E+03    1.6531392E-01      t=     1.19     0.00
+   End Triangular Decomposition                            t=     1.19     0.00
+   Residual norm =     1.6934117E+02    6.6201229E-03      t=     1.20     0.00
+   End Triangular Decomposition                            t=     1.20     0.00
+   Residual norm =     1.4216988E+00    5.5579047E-05      t=     1.20     0.00
+   End Triangular Decomposition                            t=     1.20     0.00
+   Residual norm =     5.3460517E-04    2.0899537E-08      t=     1.21     0.00
+   End Triangular Decomposition                            t=     1.21     0.00
+
+   Computing solution at time  3.2000E-05: Total proportional load  1.0000E+00
+   Residual norm =     2.5067584E+04    1.0000000E+00      t=     1.22     0.00
+   End Triangular Decomposition                            t=     1.22     0.00
+   Residual norm =     4.1296576E+03    1.6474095E-01      t=     1.23     0.00
+   End Triangular Decomposition                            t=     1.23     0.00
+   Residual norm =     1.8329733E+02    7.3121258E-03      t=     1.23     0.00
+   End Triangular Decomposition                            t=     1.23     0.00
+   Residual norm =     1.8098953E+00    7.2200628E-05      t=     1.24     0.00
+   End Triangular Decomposition                            t=     1.24     0.00
+   Residual norm =     9.8083800E-04    3.9127744E-08      t=     1.24     0.00
+   End Triangular Decomposition                            t=     1.24     0.00
+   Residual norm =     3.2225888E-07    1.2855602E-11      t=     1.25     0.00
+   End Triangular Decomposition                            t=     1.25     0.00
+
+   Computing solution at time  3.3000E-05: Total proportional load  1.0000E+00
+   Residual norm =     2.4564353E+04    1.0000000E+00      t=     1.26     0.00
+   End Triangular Decomposition                            t=     1.26     0.00
+   Residual norm =     4.0334509E+03    1.6419936E-01      t=     1.27     0.00
+   End Triangular Decomposition                            t=     1.27     0.00
+   Residual norm =     1.8505087E+02    7.5333095E-03      t=     1.28     0.00
+   End Triangular Decomposition                            t=     1.28     0.00
+   Residual norm =     1.5229813E+00    6.1999653E-05      t=     1.28     0.00
+   End Triangular Decomposition                            t=     1.28     0.00
+   Residual norm =     9.3539906E-04    3.8079532E-08      t=     1.29     0.00
+   End Triangular Decomposition                            t=     1.29     0.00
+   Residual norm =     5.9211385E-07    2.4104598E-11      t=     1.29     0.00
+   End Triangular Decomposition                            t=     1.29     0.00
+
+   Computing solution at time  3.4000E-05: Total proportional load  1.0000E+00
+   Residual norm =     2.4046844E+04    1.0000000E+00      t=     1.30     0.00
+   End Triangular Decomposition                            t=     1.30     0.00
+   Residual norm =     3.9301639E+03    1.6343783E-01      t=     1.31     0.00
+   End Triangular Decomposition                            t=     1.31     0.00
+   Residual norm =     2.0564886E+02    8.5520106E-03      t=     1.32     0.00
+   End Triangular Decomposition                            t=     1.32     0.00
+   Residual norm =     1.6760597E+00    6.9699777E-05      t=     1.32     0.00
+   End Triangular Decomposition                            t=     1.32     0.00
+   Residual norm =     1.1624415E-03    4.8340711E-08      t=     1.33     0.00
+   End Triangular Decomposition                            t=     1.33     0.00
+   Residual norm =     6.3959882E-07    2.6598036E-11      t=     1.33     0.00
+   End Triangular Decomposition                            t=     1.34     0.00
+
+   Computing solution at time  3.5000E-05: Total proportional load  1.0000E+00
+   Residual norm =     2.3536296E+04    1.0000000E+00      t=     1.34     0.00
+   End Triangular Decomposition                            t=     1.34     0.00
+   Residual norm =     3.8290474E+03    1.6268691E-01      t=     1.35     0.00
+   End Triangular Decomposition                            t=     1.35     0.00
+   Residual norm =     2.1278004E+02    9.0405065E-03      t=     1.36     0.00
+   End Triangular Decomposition                            t=     1.36     0.00
+   Residual norm =     1.8980794E+00    8.0644779E-05      t=     1.36     0.00
+   End Triangular Decomposition                            t=     1.36     0.00
+   Residual norm =     1.3519982E-03    5.7443115E-08      t=     1.37     0.00
+   End Triangular Decomposition                            t=     1.37     0.00
+   Residual norm =     4.8575975E-07    2.0638751E-11      t=     1.38     0.00
+   End Triangular Decomposition                            t=     1.38     0.00
+
+   Computing solution at time  3.6000E-05: Total proportional load  1.0000E+00
+   Residual norm =     2.3012584E+04    1.0000000E+00      t=     1.38     0.00
+   End Triangular Decomposition                            t=     1.38     0.00
+   Residual norm =     3.7205916E+03    1.6167639E-01      t=     1.39     0.00
+   End Triangular Decomposition                            t=     1.39     0.00
+   Residual norm =     2.3880662E+02    1.0377219E-02      t=     1.40     0.00
+   End Triangular Decomposition                            t=     1.40     0.00
+   Residual norm =     2.4141975E+00    1.0490771E-04      t=     1.40     0.00
+   End Triangular Decomposition                            t=     1.40     0.00
+   Residual norm =     1.8727762E-03    8.1380525E-08      t=     1.41     0.00
+   End Triangular Decomposition                            t=     1.41     0.00
+   Residual norm =     3.5007388E-07    1.5212280E-11      t=     1.42     0.00
+   End Triangular Decomposition                            t=     1.42     0.00
+
+   Computing solution at time  3.7000E-05: Total proportional load  1.0000E+00
+   Residual norm =     2.2495680E+04    1.0000000E+00      t=     1.42     0.00
+   End Triangular Decomposition                            t=     1.42     0.00
+   Residual norm =     3.6155199E+03    1.6072063E-01      t=     1.43     0.00
+   End Triangular Decomposition                            t=     1.43     0.00
+   Residual norm =     2.5828448E+02    1.1481514E-02      t=     1.44     0.00
+   End Triangular Decomposition                            t=     1.44     0.00
+   Residual norm =     4.2524330E+00    1.8903331E-04      t=     1.44     0.00
+   End Triangular Decomposition                            t=     1.44     0.00
+   Residual norm =     7.9395371E-03    3.5293607E-07      t=     1.45     0.00
+   End Triangular Decomposition                            t=     1.45     0.00
+   Residual norm =     7.6453410E-07    3.3985818E-11      t=     1.46     0.00
+   End Triangular Decomposition                            t=     1.46     0.00
+
+   Computing solution at time  3.8000E-05: Total proportional load  1.0000E+00
+   Residual norm =     2.1968091E+04    1.0000000E+00      t=     1.47     0.00
+   End Triangular Decomposition                            t=     1.47     0.00
+   Residual norm =     3.5051864E+03    1.5955808E-01      t=     1.47     0.00
+   End Triangular Decomposition                            t=     1.47     0.00
+   Residual norm =     2.5919776E+02    1.1798829E-02      t=     1.48     0.00
+   End Triangular Decomposition                            t=     1.48     0.00
+   Residual norm =     6.0077708E+00    2.7347714E-04      t=     1.48     0.00
+   End Triangular Decomposition                            t=     1.48     0.00
+   Residual norm =     2.7167625E-02    1.2366857E-06      t=     1.49     0.00
+   End Triangular Decomposition                            t=     1.49     0.00
+   Residual norm =     1.6068578E-06    7.3145080E-11      t=     1.50     0.00
+   End Triangular Decomposition                            t=     1.50     0.00
+
+   Computing solution at time  3.9000E-05: Total proportional load  1.0000E+00
+   Residual norm =     2.1447695E+04    1.0000000E+00      t=     1.51     0.00
+   End Triangular Decomposition                            t=     1.51     0.00
+   Residual norm =     3.4014232E+03    1.5859155E-01      t=     1.51     0.00
+   End Triangular Decomposition                            t=     1.52     0.00
+   Residual norm =     2.5399099E+02    1.1842344E-02      t=     1.52     0.00
+   End Triangular Decomposition                            t=     1.52     0.00
+   Residual norm =     3.4706606E+00    1.6181975E-04      t=     1.53     0.00
+   End Triangular Decomposition                            t=     1.53     0.00
+   Residual norm =     6.4320792E-03    2.9989606E-07      t=     1.53     0.00
+   End Triangular Decomposition                            t=     1.53     0.00
+   Residual norm =     8.9271596E-07    4.1622933E-11      t=     1.54     0.00
+   End Triangular Decomposition                            t=     1.54     0.00
+
+   Computing solution at time  4.0000E-05: Total proportional load  1.0000E+00
+   Residual norm =     2.0918425E+04    1.0000000E+00      t=     1.55     0.01
+   End Triangular Decomposition                            t=     1.55     0.01
+   Residual norm =     3.2953473E+03    1.5753324E-01      t=     1.55     0.01
+   End Triangular Decomposition                            t=     1.55     0.01
+   Residual norm =     2.4055866E+02    1.1499846E-02      t=     1.56     0.01
+   End Triangular Decomposition                            t=     1.56     0.01
+   Residual norm =     2.3868482E+00    1.1410267E-04      t=     1.57     0.01
+   End Triangular Decomposition                            t=     1.57     0.01
+   Residual norm =     3.2165830E-03    1.5376793E-07      t=     1.57     0.01
+   End Triangular Decomposition                            t=     1.57     0.01
+   Residual norm =     5.6224272E-07    2.6877871E-11      t=     1.58     0.01
+   End Triangular Decomposition                            t=     1.58     0.01
+
+   Computing solution at time  4.1000E-05: Total proportional load  1.0000E+00
+   Residual norm =     2.0395879E+04    1.0000000E+00      t=     1.60     0.01
+   End Triangular Decomposition                            t=     1.60     0.01
+   Residual norm =     3.1993021E+03    1.5686022E-01      t=     1.61     0.01
+   End Triangular Decomposition                            t=     1.61     0.01
+   Residual norm =     2.5711887E+02    1.2606413E-02      t=     1.62     0.01
+   End Triangular Decomposition                            t=     1.62     0.01
+   Residual norm =     4.6731464E+00    2.2912209E-04      t=     1.62     0.01
+   End Triangular Decomposition                            t=     1.62     0.01
+   Residual norm =     7.1354179E-03    3.4984605E-07      t=     1.63     0.01
+   End Triangular Decomposition                            t=     1.63     0.01
+   Residual norm =     6.3273974E-07    3.1022920E-11      t=     1.64     0.01
+   End Triangular Decomposition                            t=     1.64     0.01
+
+   Computing solution at time  4.2000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.9865596E+04    1.0000000E+00      t=     1.65     0.01
+   End Triangular Decomposition                            t=     1.65     0.01
+   Residual norm =     3.1035923E+03    1.5622951E-01      t=     1.66     0.01
+   End Triangular Decomposition                            t=     1.66     0.01
+   Residual norm =     2.2487675E+02    1.1319910E-02      t=     1.66     0.01
+   End Triangular Decomposition                            t=     1.66     0.01
+   Residual norm =     2.4780387E+00    1.2474021E-04      t=     1.67     0.01
+   End Triangular Decomposition                            t=     1.67     0.01
+   Residual norm =     3.0996366E-03    1.5603039E-07      t=     1.67     0.01
+   End Triangular Decomposition                            t=     1.68     0.01
+   Residual norm =     4.4119367E-07    2.2208932E-11      t=     1.68     0.01
+   End Triangular Decomposition                            t=     1.68     0.01
+
+   Computing solution at time  4.3000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.9341423E+04    1.0000000E+00      t=     1.69     0.01
+   End Triangular Decomposition                            t=     1.69     0.01
+   Residual norm =     3.0173120E+03    1.5600259E-01      t=     1.70     0.01
+   End Triangular Decomposition                            t=     1.70     0.01
+   Residual norm =     2.3376260E+02    1.2086112E-02      t=     1.70     0.01
+   End Triangular Decomposition                            t=     1.70     0.01
+   Residual norm =     3.0998325E+00    1.6026910E-04      t=     1.71     0.01
+   End Triangular Decomposition                            t=     1.71     0.01
+   Residual norm =     1.0674204E-01    5.5188305E-06      t=     1.72     0.01
+   End Triangular Decomposition                            t=     1.72     0.01
+   Residual norm =     9.4341595E-06    4.8776966E-10      t=     1.72     0.01
+   End Triangular Decomposition                            t=     1.72     0.01
+
+   Computing solution at time  4.4000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.8811112E+04    1.0000000E+00      t=     1.74     0.01
+   End Triangular Decomposition                            t=     1.74     0.01
+   Residual norm =     2.9308617E+03    1.5580481E-01      t=     1.74     0.01
+   End Triangular Decomposition                            t=     1.74     0.01
+   Residual norm =     2.1457254E+02    1.1406691E-02      t=     1.75     0.01
+   End Triangular Decomposition                            t=     1.75     0.01
+   Residual norm =     2.4769724E+00    1.3167603E-04      t=     1.76     0.01
+   End Triangular Decomposition                            t=     1.76     0.01
+   Residual norm =     3.4433978E-03    1.8305126E-07      t=     1.76     0.01
+   End Triangular Decomposition                            t=     1.76     0.01
+   Residual norm =     3.8184425E-07    2.0298867E-11      t=     1.77     0.01
+   End Triangular Decomposition                            t=     1.77     0.01
+
+   Computing solution at time  4.5000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.8287247E+04    1.0000000E+00      t=     1.78     0.01
+   End Triangular Decomposition                            t=     1.78     0.01
+   Residual norm =     2.8554320E+03    1.5614335E-01      t=     1.78     0.01
+   End Triangular Decomposition                            t=     1.78     0.01
+   Residual norm =     1.9766696E+02    1.0809006E-02      t=     1.79     0.01
+   End Triangular Decomposition                            t=     1.79     0.01
+   Residual norm =     2.3778428E+00    1.3002738E-04      t=     1.80     0.01
+   End Triangular Decomposition                            t=     1.80     0.01
+   Residual norm =     2.4170111E-03    1.3216921E-07      t=     1.80     0.01
+   End Triangular Decomposition                            t=     1.80     0.01
+   Residual norm =     2.8220506E-07    1.5431796E-11      t=     1.81     0.01
+   End Triangular Decomposition                            t=     1.81     0.01
+
+   Computing solution at time  4.6000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.7759082E+04    1.0000000E+00      t=     1.82     0.01
+   End Triangular Decomposition                            t=     1.82     0.01
+   Residual norm =     2.7777915E+03    1.5641526E-01      t=     1.82     0.01
+   End Triangular Decomposition                            t=     1.82     0.01
+   Residual norm =     2.0148308E+02    1.1345354E-02      t=     1.83     0.01
+   End Triangular Decomposition                            t=     1.83     0.01
+   Residual norm =     2.5603501E+00    1.4417131E-04      t=     1.84     0.01
+   End Triangular Decomposition                            t=     1.84     0.01
+   Residual norm =     5.3477247E-02    3.0112619E-06      t=     1.84     0.01
+   End Triangular Decomposition                            t=     1.84     0.01
+   Residual norm =     5.1025702E-06    2.8732173E-10      t=     1.85     0.01
+   End Triangular Decomposition                            t=     1.85     0.01
+
+   Computing solution at time  4.7000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.7236718E+04    1.0000000E+00      t=     1.86     0.01
+   End Triangular Decomposition                            t=     1.86     0.01
+   Residual norm =     2.7085606E+03    1.5713900E-01      t=     1.87     0.01
+   End Triangular Decomposition                            t=     1.87     0.01
+   Residual norm =     2.4519624E+02    1.4225228E-02      t=     1.88     0.01
+   End Triangular Decomposition                            t=     1.88     0.01
+   Residual norm =     2.7079457E+00    1.5710332E-04      t=     1.88     0.01
+   End Triangular Decomposition                            t=     1.88     0.01
+   Residual norm =     3.5278961E-03    2.0467331E-07      t=     1.89     0.01
+   End Triangular Decomposition                            t=     1.89     0.01
+   Residual norm =     4.7172816E-07    2.7367633E-11      t=     1.90     0.01
+   End Triangular Decomposition                            t=     1.90     0.01
+
+   Computing solution at time  4.8000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.6711195E+04    1.0000000E+00      t=     1.90     0.01
+   End Triangular Decomposition                            t=     1.90     0.01
+   Residual norm =     2.6378630E+03    1.5785006E-01      t=     1.91     0.01
+   End Triangular Decomposition                            t=     1.91     0.01
+   Residual norm =     2.5505449E+02    1.5262493E-02      t=     1.92     0.01
+   End Triangular Decomposition                            t=     1.92     0.01
+   Residual norm =     4.5841978E+00    2.7431898E-04      t=     1.92     0.01
+   End Triangular Decomposition                            t=     1.92     0.01
+   Residual norm =     6.4654452E-03    3.8689306E-07      t=     1.93     0.01
+   End Triangular Decomposition                            t=     1.93     0.01
+   Residual norm =     5.5511652E-07    3.3218243E-11      t=     1.94     0.01
+   End Triangular Decomposition                            t=     1.94     0.01
+
+   Computing solution at time  4.9000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.6191054E+04    1.0000000E+00      t=     1.95     0.01
+   End Triangular Decomposition                            t=     1.95     0.01
+   Residual norm =     2.5750230E+03    1.5903986E-01      t=     1.96     0.01
+   End Triangular Decomposition                            t=     1.96     0.01
+   Residual norm =     2.5413683E+02    1.5696126E-02      t=     1.96     0.01
+   End Triangular Decomposition                            t=     1.96     0.01
+   Residual norm =     4.5287277E+00    2.7970556E-04      t=     1.97     0.01
+   End Triangular Decomposition                            t=     1.97     0.01
+   Residual norm =     9.8790398E-03    6.1015421E-07      t=     1.98     0.01
+   End Triangular Decomposition                            t=     1.98     0.01
+   Residual norm =     9.4230057E-07    5.8198841E-11      t=     1.98     0.01
+   End Triangular Decomposition                            t=     1.98     0.01
+
+   Computing solution at time  5.0000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.5669440E+04    1.0000000E+00      t=     1.99     0.01
+   End Triangular Decomposition                            t=     1.99     0.01
+   Residual norm =     2.5103284E+03    1.6020537E-01      t=     2.00     0.01
+   End Triangular Decomposition                            t=     2.00     0.01
+   Residual norm =     2.5800899E+02    1.6465744E-02      t=     2.00     0.01
+   End Triangular Decomposition                            t=     2.00     0.01
+   Residual norm =     4.6859271E+00    2.9904879E-04      t=     2.01     0.01
+   End Triangular Decomposition                            t=     2.01     0.01
+   Residual norm =     1.1026831E-02    7.0371568E-07      t=     2.02     0.01
+   End Triangular Decomposition                            t=     2.02     0.01
+   Residual norm =     1.2894858E-06    8.2293041E-11      t=     2.02     0.01
+   End Triangular Decomposition                            t=     2.02     0.01
+
+   Computing solution at time  5.1000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.5153384E+04    1.0000000E+00      t=     2.05     0.01
+   End Triangular Decomposition                            t=     2.05     0.01
+   Residual norm =     2.4534213E+03    1.6190583E-01      t=     2.05     0.01
+   End Triangular Decomposition                            t=     2.05     0.01
+   Residual norm =     2.5214599E+02    1.6639583E-02      t=     2.06     0.01
+   End Triangular Decomposition                            t=     2.06     0.01
+   Residual norm =     3.7980171E+00    2.5063821E-04      t=     2.07     0.01
+   End Triangular Decomposition                            t=     2.07     0.01
+   Residual norm =     8.7582473E-03    5.7797303E-07      t=     2.07     0.01
+   End Triangular Decomposition                            t=     2.07     0.01
+   Residual norm =     1.2235950E-06    8.0747307E-11      t=     2.08     0.01
+   End Triangular Decomposition                            t=     2.08     0.01
+
+   Computing solution at time  5.2000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.4638438E+04    1.0000000E+00      t=     2.09     0.01
+   End Triangular Decomposition                            t=     2.09     0.01
+   Residual norm =     2.3968414E+03    1.6373615E-01      t=     2.10     0.01
+   End Triangular Decomposition                            t=     2.10     0.01
+   Residual norm =     2.4729193E+02    1.6893328E-02      t=     2.10     0.01
+   End Triangular Decomposition                            t=     2.10     0.01
+   Residual norm =     3.4568873E+00    2.3615139E-04      t=     2.11     0.01
+   End Triangular Decomposition                            t=     2.11     0.01
+   Residual norm =     5.8469288E-03    3.9942301E-07      t=     2.12     0.01
+   End Triangular Decomposition                            t=     2.12     0.01
+   Residual norm =     7.7502933E-07    5.2944812E-11      t=     2.12     0.01
+   End Triangular Decomposition                            t=     2.12     0.01
+
+   Computing solution at time  5.3000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.4129664E+04    1.0000000E+00      t=     2.13     0.01
+   End Triangular Decomposition                            t=     2.13     0.01
+   Residual norm =     2.3489849E+03    1.6624493E-01      t=     2.14     0.01
+   End Triangular Decomposition                            t=     2.14     0.01
+   Residual norm =     2.9815042E+02    2.1101028E-02      t=     2.15     0.01
+   End Triangular Decomposition                            t=     2.15     0.01
+   Residual norm =     5.6143679E+00    3.9734618E-04      t=     2.15     0.01
+   End Triangular Decomposition                            t=     2.15     0.01
+   Residual norm =     8.3796795E-03    5.9305585E-07      t=     2.16     0.01
+   End Triangular Decomposition                            t=     2.16     0.01
+   Residual norm =     1.0107769E-06    7.1535812E-11      t=     2.17     0.01
+   End Triangular Decomposition                            t=     2.17     0.01
+
+   Computing solution at time  5.4000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.3624348E+04    1.0000000E+00      t=     2.18     0.01
+   End Triangular Decomposition                            t=     2.18     0.01
+   Residual norm =     2.3031610E+03    1.6904742E-01      t=     2.18     0.01
+   End Triangular Decomposition                            t=     2.18     0.01
+   Residual norm =     2.8952048E+02    2.1250226E-02      t=     2.19     0.01
+   End Triangular Decomposition                            t=     2.19     0.01
+   Residual norm =     6.0465607E+00    4.4380550E-04      t=     2.20     0.01
+   End Triangular Decomposition                            t=     2.20     0.01
+   Residual norm =     1.7618326E-02    1.2931500E-06      t=     2.20     0.01
+   End Triangular Decomposition                            t=     2.20     0.01
+   Residual norm =     1.6941796E-06    1.2434940E-10      t=     2.21     0.01
+   End Triangular Decomposition                            t=     2.21     0.01
+
+   Computing solution at time  5.5000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.3125223E+04    1.0000000E+00      t=     2.22     0.01
+   End Triangular Decomposition                            t=     2.22     0.01
+   Residual norm =     2.2646657E+03    1.7254302E-01      t=     2.23     0.01
+   End Triangular Decomposition                            t=     2.23     0.01
+   Residual norm =     2.7269123E+02    2.0776122E-02      t=     2.23     0.01
+   End Triangular Decomposition                            t=     2.23     0.01
+   Residual norm =     7.5330740E+00    5.7393875E-04      t=     2.24     0.01
+   End Triangular Decomposition                            t=     2.24     0.01
+   Residual norm =     1.6503565E-02    1.2573931E-06      t=     2.25     0.01
+   End Triangular Decomposition                            t=     2.25     0.01
+   Residual norm =     2.8513432E-05    2.1724151E-09      t=     2.25     0.01
+   End Triangular Decomposition                            t=     2.25     0.01
+
+   Computing solution at time  5.6000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.2631473E+04    1.0000000E+00      t=     2.26     0.01
+   End Triangular Decomposition                            t=     2.26     0.01
+   Residual norm =     2.2258661E+03    1.7621587E-01      t=     2.27     0.01
+   End Triangular Decomposition                            t=     2.27     0.01
+   Residual norm =     3.2522990E+02    2.5747582E-02      t=     2.28     0.01
+   End Triangular Decomposition                            t=     2.28     0.01
+   Residual norm =     7.2249017E+01    5.7197616E-03      t=     2.28     0.01
+   End Triangular Decomposition                            t=     2.28     0.01
+   Residual norm =     1.0680795E-01    8.4556999E-06      t=     2.29     0.01
+   End Triangular Decomposition                            t=     2.29     0.01
+   Residual norm =     1.4959926E-06    1.1843374E-10      t=     2.29     0.01
+   End Triangular Decomposition                            t=     2.29     0.01
+
+   Computing solution at time  5.7000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.2142049E+04    1.0000000E+00      t=     2.30     0.01
+   End Triangular Decomposition                            t=     2.30     0.01
+   Residual norm =     2.1851942E+03    1.7996915E-01      t=     2.31     0.01
+   End Triangular Decomposition                            t=     2.31     0.01
+   Residual norm =     4.0234651E+02    3.3136624E-02      t=     2.32     0.01
+   End Triangular Decomposition                            t=     2.32     0.01
+   Residual norm =     1.4682145E+01    1.2091983E-03      t=     2.32     0.01
+   End Triangular Decomposition                            t=     2.32     0.01
+   Residual norm =     3.0084599E-02    2.4777201E-06      t=     2.33     0.01
+   End Triangular Decomposition                            t=     2.33     0.01
+   Residual norm =     5.2481656E-06    4.3223065E-10      t=     2.33     0.01
+   End Triangular Decomposition                            t=     2.33     0.01
+
+   Computing solution at time  5.8000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.1652517E+04    1.0000000E+00      t=     2.34     0.01
+   End Triangular Decomposition                            t=     2.34     0.01
+   Residual norm =     2.1299854E+03    1.8279187E-01      t=     2.35     0.01
+   End Triangular Decomposition                            t=     2.35     0.01
+   Residual norm =     4.8172063E+02    4.1340479E-02      t=     2.35     0.01
+   End Triangular Decomposition                            t=     2.36     0.01
+   Residual norm =     3.6130589E+01    3.1006682E-03      t=     2.36     0.01
+   End Triangular Decomposition                            t=     2.36     0.01
+   Residual norm =     2.6925819E+00    2.3107299E-04      t=     2.36     0.01
+   End Triangular Decomposition                            t=     2.36     0.01
+   Residual norm =     1.2226448E-03    1.0492538E-07      t=     2.37     0.01
+   End Triangular Decomposition                            t=     2.37     0.01
+   Residual norm =     3.9827666E-07    3.4179454E-11      t=     2.38     0.01
+   End Triangular Decomposition                            t=     2.38     0.01
+
+   Computing solution at time  5.9000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.1159153E+04    1.0000000E+00      t=     2.38     0.01
+   End Triangular Decomposition                            t=     2.38     0.01
+   Residual norm =     2.0556329E+03    1.8421048E-01      t=     2.39     0.01
+   End Triangular Decomposition                            t=     2.39     0.01
+   Residual norm =     4.7865692E+02    4.2893662E-02      t=     2.40     0.01
+   End Triangular Decomposition                            t=     2.40     0.01
+   Residual norm =     1.8081769E+01    1.6203533E-03      t=     2.40     0.01
+   End Triangular Decomposition                            t=     2.40     0.01
+   Residual norm =     8.2339212E-02    7.3786260E-06      t=     2.41     0.01
+   End Triangular Decomposition                            t=     2.41     0.01
+   Residual norm =     1.8756468E-05    1.6808147E-09      t=     2.41     0.01
+   End Triangular Decomposition                            t=     2.42     0.01
+
+   Computing solution at time  6.0000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.0665063E+04    1.0000000E+00      t=     2.42     0.01
+   End Triangular Decomposition                            t=     2.42     0.01
+   Residual norm =     1.9659254E+03    1.8433322E-01      t=     2.43     0.01
+   End Triangular Decomposition                            t=     2.43     0.01
+   Residual norm =     4.7169820E+02    4.4228355E-02      t=     2.44     0.01
+   End Triangular Decomposition                            t=     2.44     0.01
+   Residual norm =     1.1111405E+01    1.0418509E-03      t=     2.44     0.01
+   End Triangular Decomposition                            t=     2.44     0.01
+   Residual norm =     4.8220201E-01    4.5213236E-05      t=     2.45     0.01
+   End Triangular Decomposition                            t=     2.45     0.01
+   Residual norm =     1.7109746E-04    1.6042799E-08      t=     2.45     0.01
+   End Triangular Decomposition                            t=     2.45     0.01
+
+   Computing solution at time  6.1000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.0171032E+04    1.0000000E+00      t=     2.47     0.01
+   End Triangular Decomposition                            t=     2.47     0.01
+   Residual norm =     1.8698332E+03    1.8383908E-01      t=     2.48     0.01
+   End Triangular Decomposition                            t=     2.48     0.01
+   Residual norm =     4.1358972E+02    4.0663496E-02      t=     2.48     0.01
+   End Triangular Decomposition                            t=     2.48     0.01
+   Residual norm =     1.3310121E+01    1.3086303E-03      t=     2.49     0.01
+   End Triangular Decomposition                            t=     2.49     0.01
+   Residual norm =     3.8446618E-02    3.7800115E-06      t=     2.50     0.01
+   End Triangular Decomposition                            t=     2.50     0.01
+   Residual norm =     7.3485066E-06    7.2249372E-10      t=     2.50     0.01
+   End Triangular Decomposition                            t=     2.50     0.01
+
+   Computing solution at time  6.2000E-05: Total proportional load  1.0000E+00
+   Residual norm =     9.6769498E+03    1.0000000E+00      t=     2.51     0.01
+   End Triangular Decomposition                            t=     2.51     0.01
+   Residual norm =     1.7726659E+03    1.8318436E-01      t=     2.52     0.01
+   End Triangular Decomposition                            t=     2.52     0.01
+   Residual norm =     3.6322015E+02    3.7534570E-02      t=     2.52     0.01
+   End Triangular Decomposition                            t=     2.52     0.01
+   Residual norm =     5.7831191E+00    5.9761797E-04      t=     2.53     0.01
+   End Triangular Decomposition                            t=     2.53     0.01
+   Residual norm =     8.1359868E-02    8.4075943E-06      t=     2.54     0.01
+   End Triangular Decomposition                            t=     2.54     0.01
+   Residual norm =     1.1239308E-05    1.1614515E-09      t=     2.54     0.01
+   End Triangular Decomposition                            t=     2.54     0.01
+
+   Computing solution at time  6.3000E-05: Total proportional load  1.0000E+00
+   Residual norm =     9.1825265E+03    1.0000000E+00      t=     2.55     0.01
+   End Triangular Decomposition                            t=     2.55     0.01
+   Residual norm =     1.6781567E+03    1.8275544E-01      t=     2.56     0.01
+   End Triangular Decomposition                            t=     2.56     0.01
+   Residual norm =     3.4975441E+02    3.8089126E-02      t=     2.56     0.01
+   End Triangular Decomposition                            t=     2.56     0.01
+   Residual norm =     5.8089207E+00    6.3260593E-04      t=     2.57     0.01
+   End Triangular Decomposition                            t=     2.57     0.01
+   Residual norm =     8.7425404E-03    9.5208442E-07      t=     2.57     0.01
+   End Triangular Decomposition                            t=     2.57     0.01
+   Residual norm =     1.8720221E-06    2.0386787E-10      t=     2.58     0.01
+   End Triangular Decomposition                            t=     2.58     0.01
+
+   Computing solution at time  6.4000E-05: Total proportional load  1.0000E+00
+   Residual norm =     8.6871736E+03    1.0000000E+00      t=     2.59     0.01
+   End Triangular Decomposition                            t=     2.59     0.01
+   Residual norm =     1.5873793E+03    1.8272678E-01      t=     2.59     0.01
+   End Triangular Decomposition                            t=     2.59     0.01
+   Residual norm =     3.5371274E+02    4.0716666E-02      t=     2.60     0.01
+   End Triangular Decomposition                            t=     2.60     0.01
+   Residual norm =     7.0988596E+00    8.1716561E-04      t=     2.60     0.01
+   End Triangular Decomposition                            t=     2.60     0.01
+   Residual norm =     5.5652393E-02    6.4062715E-06      t=     2.61     0.01
+   End Triangular Decomposition                            t=     2.61     0.01
+   Residual norm =     7.4767162E-06    8.6066153E-10      t=     2.62     0.01
+   End Triangular Decomposition                            t=     2.62     0.01
+
+   Computing solution at time  6.5000E-05: Total proportional load  1.0000E+00
+   Residual norm =     8.1917149E+03    1.0000000E+00      t=     2.62     0.01
+   End Triangular Decomposition                            t=     2.62     0.01
+   Residual norm =     1.4997115E+03    1.8307662E-01      t=     2.63     0.01
+   End Triangular Decomposition                            t=     2.63     0.01
+   Residual norm =     3.2595829E+02    3.9791215E-02      t=     2.64     0.01
+   End Triangular Decomposition                            t=     2.64     0.01
+   Residual norm =     5.1354502E+00    6.2690784E-04      t=     2.64     0.01
+   End Triangular Decomposition                            t=     2.64     0.01
+   Residual norm =     1.4654271E-02    1.7889136E-06      t=     2.65     0.01
+   End Triangular Decomposition                            t=     2.65     0.01
+   Residual norm =     1.9620468E-06    2.3951600E-10      t=     2.65     0.01
+   End Triangular Decomposition                            t=     2.65     0.01
+
+   Computing solution at time  6.6000E-05: Total proportional load  1.0000E+00
+   Residual norm =     7.6961224E+03    1.0000000E+00      t=     2.66     0.01
+   End Triangular Decomposition                            t=     2.66     0.01
+   Residual norm =     1.4139005E+03    1.8371595E-01      t=     2.67     0.01
+   End Triangular Decomposition                            t=     2.67     0.01
+   Residual norm =     3.0697283E+02    3.9886688E-02      t=     2.68     0.01
+   End Triangular Decomposition                            t=     2.68     0.01
+   Residual norm =     4.7880835E+00    6.2214233E-04      t=     2.68     0.01
+   End Triangular Decomposition                            t=     2.68     0.01
+   Residual norm =     6.6685248E-02    8.6647853E-06      t=     2.68     0.01
+   End Triangular Decomposition                            t=     2.69     0.01
+   Residual norm =     1.0867588E-05    1.4120862E-09      t=     2.69     0.01
+   End Triangular Decomposition                            t=     2.69     0.01
+
+   Computing solution at time  6.7000E-05: Total proportional load  1.0000E+00
+   Residual norm =     7.2006722E+03    1.0000000E+00      t=     2.70     0.01
+   End Triangular Decomposition                            t=     2.70     0.01
+   Residual norm =     1.3299668E+03    1.8470036E-01      t=     2.71     0.01
+   End Triangular Decomposition                            t=     2.71     0.01
+   Residual norm =     2.5396862E+02    3.5270127E-02      t=     2.71     0.01
+   End Triangular Decomposition                            t=     2.71     0.01
+   Residual norm =     3.0963837E+00    4.3001314E-04      t=     2.72     0.01
+   End Triangular Decomposition                            t=     2.72     0.01
+   Residual norm =     1.4540024E-01    2.0192593E-05      t=     2.72     0.01
+   End Triangular Decomposition                            t=     2.72     0.01
+   Residual norm =     1.8496909E-05    2.5687753E-09      t=     2.73     0.01
+   End Triangular Decomposition                            t=     2.73     0.01
+
+   Computing solution at time  6.8000E-05: Total proportional load  1.0000E+00
+   Residual norm =     6.7061410E+03    1.0000000E+00      t=     2.74     0.01
+   End Triangular Decomposition                            t=     2.74     0.01
+   Residual norm =     1.2482194E+03    1.8613079E-01      t=     2.74     0.01
+   End Triangular Decomposition                            t=     2.74     0.01
+   Residual norm =     2.1828997E+02    3.2550757E-02      t=     2.75     0.01
+   End Triangular Decomposition                            t=     2.75     0.01
+   Residual norm =     3.8022428E+00    5.6697925E-04      t=     2.76     0.01
+   End Triangular Decomposition                            t=     2.76     0.01
+   Residual norm =     2.2499418E-01    3.3550470E-05      t=     2.76     0.01
+   End Triangular Decomposition                            t=     2.76     0.01
+   Residual norm =     4.1045680E-05    6.1206109E-09      t=     2.77     0.01
+   End Triangular Decomposition                            t=     2.77     0.01
+
+   Computing solution at time  6.9000E-05: Total proportional load  1.0000E+00
+   Residual norm =     6.2122976E+03    1.0000000E+00      t=     2.78     0.01
+   End Triangular Decomposition                            t=     2.78     0.01
+   Residual norm =     1.1685264E+03    1.8809891E-01      t=     2.78     0.01
+   End Triangular Decomposition                            t=     2.78     0.01
+   Residual norm =     2.3907488E+02    3.8484132E-02      t=     2.79     0.01
+   End Triangular Decomposition                            t=     2.79     0.01
+   Residual norm =     5.0090299E+00    8.0630875E-04      t=     2.80     0.01
+   End Triangular Decomposition                            t=     2.80     0.01
+   Residual norm =     1.5079586E-01    2.4273766E-05      t=     2.80     0.01
+   End Triangular Decomposition                            t=     2.80     0.01
+   Residual norm =     2.2460655E-05    3.6155149E-09      t=     2.80     0.01
+   End Triangular Decomposition                            t=     2.80     0.01
+
+   Computing solution at time  7.0000E-05: Total proportional load  1.0000E+00
+   Residual norm =     5.7194459E+03    1.0000000E+00      t=     2.82     0.01
+   End Triangular Decomposition                            t=     2.82     0.01
+   Residual norm =     1.0869993E+03    1.9005325E-01      t=     2.82     0.01
+   End Triangular Decomposition                            t=     2.82     0.01
+   Residual norm =     2.3032148E+02    4.0269895E-02      t=     2.83     0.01
+   End Triangular Decomposition                            t=     2.83     0.01
+   Residual norm =     3.7265095E+00    6.5155079E-04      t=     2.83     0.01
+   End Triangular Decomposition                            t=     2.83     0.01
+   Residual norm =     5.6583053E-03    9.8931005E-07      t=     2.84     0.01
+   End Triangular Decomposition                            t=     2.84     0.01
+   Residual norm =     8.1113248E-07    1.4182012E-10      t=     2.84     0.01
+   End Triangular Decomposition                            t=     2.84     0.01
+
+   Computing solution at time  7.1000E-05: Total proportional load  1.0000E+00
+   Residual norm =     5.2276874E+03    1.0000000E+00      t=     2.86     0.01
+   End Triangular Decomposition                            t=     2.86     0.01
+   Residual norm =     1.0034313E+03    1.9194555E-01      t=     2.87     0.01
+   End Triangular Decomposition                            t=     2.87     0.01
+   Residual norm =     2.0873737E+02    3.9929198E-02      t=     2.88     0.01
+   End Triangular Decomposition                            t=     2.88     0.01
+   Residual norm =     3.1816672E+00    6.0861848E-04      t=     2.88     0.01
+   End Triangular Decomposition                            t=     2.88     0.01
+   Residual norm =     3.0316149E-03    5.7991510E-07      t=     2.89     0.01
+   End Triangular Decomposition                            t=     2.89     0.01
+   Residual norm =     7.3515039E-07    1.4062631E-10      t=     2.89     0.01
+   End Triangular Decomposition                            t=     2.89     0.01
+
+   Computing solution at time  7.2000E-05: Total proportional load  1.0000E+00
+   Residual norm =     4.7378526E+03    1.0000000E+00      t=     2.90     0.01
+   End Triangular Decomposition                            t=     2.90     0.01
+   Residual norm =     9.1938749E+02    1.9405152E-01      t=     2.91     0.01
+   End Triangular Decomposition                            t=     2.91     0.01
+   Residual norm =     1.8042564E+02    3.8081733E-02      t=     2.92     0.01
+   End Triangular Decomposition                            t=     2.92     0.01
+   Residual norm =     2.4763196E+00    5.2266709E-04      t=     2.92     0.01
+   End Triangular Decomposition                            t=     2.92     0.01
+   Residual norm =     2.1413672E-01    4.5196999E-05      t=     2.92     0.01
+   End Triangular Decomposition                            t=     2.93     0.01
+   Residual norm =     2.6680386E-03    5.6313247E-07      t=     2.93     0.01
+   End Triangular Decomposition                            t=     2.93     0.01
+   Residual norm =     3.7254145E-07    7.8630864E-11      t=     2.94     0.01
+   End Triangular Decomposition                            t=     2.94     0.01
+
+   Computing solution at time  7.3000E-05: Total proportional load  1.0000E+00
+   Residual norm =     4.2502489E+03    1.0000000E+00      t=     2.95     0.01
+   End Triangular Decomposition                            t=     2.95     0.01
+   Residual norm =     8.3625221E+02    1.9675371E-01      t=     2.95     0.01
+   End Triangular Decomposition                            t=     2.95     0.01
+   Residual norm =     1.5417526E+02    3.6274408E-02      t=     2.96     0.01
+   End Triangular Decomposition                            t=     2.96     0.01
+   Residual norm =     2.4784473E+00    5.8312993E-04      t=     2.96     0.01
+   End Triangular Decomposition                            t=     2.96     0.01
+   Residual norm =     2.0058011E-01    4.7192557E-05      t=     2.97     0.01
+   End Triangular Decomposition                            t=     2.97     0.01
+   Residual norm =     2.6455932E-05    6.2245608E-09      t=     2.98     0.01
+   End Triangular Decomposition                            t=     2.98     0.01
+
+   Computing solution at time  7.4000E-05: Total proportional load  1.0000E+00
+   Residual norm =     3.7653181E+03    1.0000000E+00      t=     2.98     0.01
+   End Triangular Decomposition                            t=     2.98     0.01
+   Residual norm =     7.5267318E+02    1.9989631E-01      t=     2.99     0.01
+   End Triangular Decomposition                            t=     2.99     0.01
+   Residual norm =     1.1804220E+02    3.1349861E-02      t=     3.00     0.01
+   End Triangular Decomposition                            t=     3.00     0.01
+   Residual norm =     1.6181305E+00    4.2974603E-04      t=     3.00     0.01
+   End Triangular Decomposition                            t=     3.00     0.01
+   Residual norm =     3.8525788E-03    1.0231749E-06      t=     3.01     0.01
+   End Triangular Decomposition                            t=     3.01     0.01
+   Residual norm =     5.1172451E-07    1.3590472E-10      t=     3.01     0.01
+   End Triangular Decomposition                            t=     3.01     0.01
+
+   Computing solution at time  7.5000E-05: Total proportional load  1.0000E+00
+   Residual norm =     3.2840635E+03    1.0000000E+00      t=     3.02     0.01
+   End Triangular Decomposition                            t=     3.02     0.01
+   Residual norm =     6.6682664E+02    2.0304925E-01      t=     3.02     0.01
+   End Triangular Decomposition                            t=     3.02     0.01
+   Residual norm =     1.1179971E+02    3.4043103E-02      t=     3.03     0.01
+   End Triangular Decomposition                            t=     3.03     0.01
+   Residual norm =     1.3406937E+00    4.0824233E-04      t=     3.04     0.01
+   End Triangular Decomposition                            t=     3.04     0.01
+   Residual norm =     3.6454051E-03    1.1100288E-06      t=     3.04     0.01
+   End Triangular Decomposition                            t=     3.04     0.01
+   Residual norm =     3.7519882E-07    1.1424835E-10      t=     3.04     0.01
+   End Triangular Decomposition                            t=     3.04     0.01
+
+   Computing solution at time  7.6000E-05: Total proportional load  1.0000E+00
+   Residual norm =     2.8087059E+03    1.0000000E+00      t=     3.06     0.01
+   End Triangular Decomposition                            t=     3.06     0.01
+   Residual norm =     5.7925012E+02    2.0623381E-01      t=     3.06     0.01
+   End Triangular Decomposition                            t=     3.06     0.01
+   Residual norm =     1.3135732E+02    4.6767915E-02      t=     3.06     0.01
+   End Triangular Decomposition                            t=     3.06     0.01
+   Residual norm =     2.8128085E+00    1.0014607E-03      t=     3.07     0.01
+   End Triangular Decomposition                            t=     3.07     0.01
+   Residual norm =     1.0219492E-03    3.6385056E-07      t=     3.08     0.01
+   End Triangular Decomposition                            t=     3.08     0.01
+   Residual norm =     1.1998123E-07    4.2717619E-11      t=     3.08     0.01
+   End Triangular Decomposition                            t=     3.08     0.01
+
+   Computing solution at time  7.7000E-05: Total proportional load  1.0000E+00
+   Residual norm =     2.3417746E+03    1.0000000E+00      t=     3.09     0.01
+   End Triangular Decomposition                            t=     3.09     0.01
+   Residual norm =     4.9121874E+02    2.0976346E-01      t=     3.10     0.01
+   End Triangular Decomposition                            t=     3.10     0.01
+   Residual norm =     1.0124472E+02    4.3234188E-02      t=     3.10     0.01
+   End Triangular Decomposition                            t=     3.10     0.01
+   Residual norm =     8.6529194E-01    3.6950266E-04      t=     3.11     0.01
+   End Triangular Decomposition                            t=     3.11     0.01
+   Residual norm =     2.7012927E-04    1.1535238E-07      t=     3.11     0.01
+   End Triangular Decomposition                            t=     3.11     0.01
+   Residual norm =     4.5282838E-08    1.9336976E-11      t=     3.12     0.01
+   End Triangular Decomposition                            t=     3.12     0.01
+
+   Computing solution at time  7.8000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.8879942E+03    1.0000000E+00      t=     3.13     0.01
+   End Triangular Decomposition                            t=     3.13     0.01
+   Residual norm =     4.0447755E+02    2.1423665E-01      t=     3.13     0.01
+   End Triangular Decomposition                            t=     3.13     0.01
+   Residual norm =     9.1018249E+01    4.8208966E-02      t=     3.14     0.01
+   End Triangular Decomposition                            t=     3.14     0.01
+   Residual norm =     2.0109791E+00    1.0651405E-03      t=     3.14     0.01
+   End Triangular Decomposition                            t=     3.14     0.01
+   Residual norm =     1.1786046E-03    6.2426284E-07      t=     3.15     0.01
+   End Triangular Decomposition                            t=     3.15     0.01
+   Residual norm =     7.6207961E-08    4.0364509E-11      t=     3.16     0.01
+   End Triangular Decomposition                            t=     3.16     0.01
+
+   Computing solution at time  7.9000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.4564291E+03    1.0000000E+00      t=     3.16     0.01
+   End Triangular Decomposition                            t=     3.16     0.01
+   Residual norm =     3.1712326E+02    2.1774027E-01      t=     3.17     0.01
+   End Triangular Decomposition                            t=     3.17     0.01
+   Residual norm =     6.8209449E+01    4.6833348E-02      t=     3.18     0.01
+   End Triangular Decomposition                            t=     3.18     0.01
+   Residual norm =     3.5229665E-01    2.4189070E-04      t=     3.18     0.01
+   End Triangular Decomposition                            t=     3.18     0.01
+   Residual norm =     1.4427924E-02    9.9063694E-06      t=     3.18     0.01
+   End Triangular Decomposition                            t=     3.18     0.01
+   Residual norm =     6.3579580E-07    4.3654430E-10      t=     3.19     0.01
+   End Triangular Decomposition                            t=     3.19     0.01
+
+   Computing solution at time  8.0000E-05: Total proportional load  1.0000E+00
+   Residual norm =     1.0724076E+03    1.0000000E+00      t=     3.20     0.01
+   End Triangular Decomposition                            t=     3.20     0.01
+   Residual norm =     2.2666521E+02    2.1136105E-01      t=     3.20     0.01
+   End Triangular Decomposition                            t=     3.20     0.01
+   Residual norm =     5.4643582E+01    5.0954114E-02      t=     3.21     0.01
+   End Triangular Decomposition                            t=     3.21     0.01
+   Residual norm =     8.1330083E-01    7.5838776E-04      t=     3.22     0.01
+   End Triangular Decomposition                            t=     3.22     0.01
+   Residual norm =     1.3404266E-02    1.2499227E-05      t=     3.22     0.01
+   End Triangular Decomposition                            t=     3.22     0.01
+   Residual norm =     1.2719268E-06    1.1860478E-09      t=     3.22     0.01
+   End Triangular Decomposition                            t=     3.23     0.01
+ *End of Macro Execution*                                  t=     3.25     0.01

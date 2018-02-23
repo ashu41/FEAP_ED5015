@@ -1,0 +1,5 @@
+MATErial       1
+  SOLId   0   0   0   0   0
+    PLANe STREss
+    ELAStic ISOTropic 1000.0 0.25
+     
